@@ -2,17 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Simplytel</title>
+
+  <!-- Tailwind via CDN (aucune compilation nécessaire) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Style custom -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- iOS Web App Settings -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <title>Page de connexion</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="apple-mobile-web-app-title" content="Simplytel" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
 </head>
-<body>
-  <div id="root"></div>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel" src="../src/index.jsx"></script>
+
+<body class="bg-black flex items-center justify-center min-h-screen text-white">
+
+  <div class="bg-[#1a1a1a] rounded-2xl p-6 w-[90%] max-w-sm text-center shadow-xl">
+    
+    <!-- Logo -->
+    <div class="mb-6">
+      <div class="flex justify-center">
+        <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none">
+          <path d="M16 32a16 16 0 0116-16" stroke="#999" stroke-width="6"/>
+          <path d="M8 32a24 24 0 0124-24" stroke="#666" stroke-width="6"/>
+          <path d="M0 32a32 32 0 0132-32" stroke="#444" stroke-width="6"/>
+          <path d="M32 0a32 32 0 0132 32" stroke="#f08a01" stroke-width="6"/>
+        </svg>
+      </div>
+      <h1 class="text-3xl font-bold mt-2">
+        <span class="text-[#f08a01]">Simply</span><span class="text-gray-200">tel</span>
+      </h1>
+      <p class="text-sm text-gray-400">Simplifiez-vous la téléphonie</p>
+    </div>
+
+    <!-- Slogan -->
+    <h2 class="text-lg font-semibold mb-6 leading-tight">
+      Gérer votre standard<br />
+      téléphonique<br />
+      simplement
+    </h2>
+
+    <!-- Formulaire -->
+    <form action="#" method="POST" class="space-y-4">
+      <input type="email" placeholder="Email" class="input-field" />
+      <input type="password" placeholder="Password" class="input-field" />
+      <button type="submit" class="btn-primary">Log In</button>
+    </form>
+
+    <!-- Conditions -->
+    <p class="text-xs text-gray-400 mt-4">
+      En continuant, vous acceptez les <a href="#" class="underline">conditions générales</a>
+    </p>
+  </div>
+
 </body>
 </html>
