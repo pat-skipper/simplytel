@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simplytel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplytel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-black flex items-center justify-center min-h-screen text-white">
+    <div class="bg-[#1a1a1a] rounded-2xl p-6 w-[90%] max-w-sm text-center shadow-xl">
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body class="bg-black min-h-screen flex items-center justify-center text-white">
-
-  <div class="bg-[#1a1a1a] rounded-2xl p-6 w-[90%] max-w-sm text-center shadow-xl">
-    
-    <!-- Logo -->
-    <div class="mb-6">
-      <div class="flex justify-center">
-        <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none">
-          <path d="M16 32a16 16 0 0116-16" stroke="#999" stroke-width="6"/>
-          <path d="M8 32a24 24 0 0124-24" stroke="#666" stroke-width="6"/>
-          <path d="M0 32a32 32 0 0132-32" stroke="#444" stroke-width="6"/>
-          <path d="M32 0a32 32 0 0132 32" stroke="#f08a01" stroke-width="6"/>
-        </svg>
+      <!-- Logo -->
+      <div class="mb-6">
+        <div class="flex justify-center">
+          <img src="images/logo.png" alt="Simplytel Logo">
+        </div>
       </div>
-      <h1 class="text-3xl font-bold mt-2">
-        <span class="text-[#f08a01]">Simply</span><span class="text-gray-200">tel</span>
-      </h1>
-      <p class="text-sm text-gray-400">Simplifiez-vous la téléphonie</p>
+
+      <!-- Slogan -->
+      <h2 class="text-2xl font-semibold mb-6 leading-snug">
+        Gérer votre standard<br />
+        téléphonique simplement
+      </h2>
+
+      <!-- Formulaire -->
+      <form action="#" method="POST" class="space-y-4">
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full px-4 py-2 rounded-full bg-[#2d2d2d] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full px-4 py-2 rounded-full bg-[#2d2d2d] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-full transition"
+        >
+          Log In
+        </button>
+      </form>
+
+      <!-- Conditions -->
+      <p class="text-xs text-gray-400 mt-4">
+        En continuant, vous acceptez les
+        <a href="#" class="underline">conditions générales</a>
+      </p>
     </div>
-
-    <!-- Slogan -->
-    <h2 class="text-lg font-semibold mb-6 leading-tight">
-      Gérer votre standard<br />
-      téléphonique<br />
-      simplement
-    </h2>
-
-    <!-- Form -->
-    <form action="#" method="POST" class="space-y-4">
-      <input type="email" placeholder="Email" class="form-input-simply" />
-      <input type="password" placeholder="Password" class="form-input-simply" />
-      <button type="submit" class="btn-simply">Log In</button>
-    </form>
-
-    <!-- Conditions -->
-    <p class="text-xs text-gray-400 mt-4">
-      En continuant, vous acceptez les <a href="#" class="underline">conditions générales</a>
-    </p>
-  </div>
-
-</body>
+  </body>
 </html>
+
 

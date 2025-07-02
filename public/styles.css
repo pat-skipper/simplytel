@@ -1,36 +1,64 @@
-/* Champ Email & Password */
-.form-input-simply {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border-radius: 9999px; /* pill shape */
-  background-color: #2d2d2d; /* foncé */
-  color: white;
-  font-size: 1rem;
-  border: none;
-  outline: none;
+/* === TYPO ET REGLAGES GÉNÉRAUX === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-.form-input-simply::placeholder {
-  color: #a1a1aa; /* gris clair */
+/* Adaptation iPhone X et + (safe area) */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  background-color: #000;
 }
 
-.form-input-simply:focus {
+/* === INPUTS PERSONNALISÉS === */
+input[type="email"],
+input[type="password"] {
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
   background-color: #3a3a3a;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
 }
 
-/* Bouton Log In */
-.btn-simply {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background-color: #3b82f6; /* bleu Tailwind */
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 9999px;
-  border: none;
-  transition: background-color 0.2s ease-in-out;
+/* === BOUTON PERSONNALISÉ === */
+button[type="submit"] {
+  transition: background-color 0.3s ease-in-out;
 }
 
-.btn-simply:hover {
-  background-color: #2563eb;
+button[type="submit"]:hover {
+  background-color: #2563eb !important; /* plus foncé que #3b82f6 */
+}
+
+/* === LIENS === */
+a {
+  text-decoration-thickness: 1px;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #f08a01;
+}
+
+/* === RESPONSIVE (petits écrans) === */
+@media screen and (max-width: 360px) {
+  h1, h2 {
+    font-size: 90%;
+  }
+
+  input,
+  button {
+    font-size: 0.875rem;
+  }
+
+  .text-xs {
+    font-size: 0.65rem;
+  }
 }
