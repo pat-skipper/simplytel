@@ -3,10 +3,10 @@ import './stylehome.css'
 
 export default function Home() {
   return (
-    <div className="bg-[#1a1a1a] shadow-xl w-full h-full text-white p-6 pb-[env(safe-area-inset-bottom)] px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)]">
+    <div className="bg-[#1a1a1a] shadow-xl w-full h-full max-w-sm text-white p-6 pb-[env(safe-area-inset-bottom)] px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)]">
       <div className="mb-6">
         <div className="flex justify-center">
-          <img src="images/logo.png" alt="Simplytel Logo" />
+          <img src="public/images/logo.png" alt="Simplytel Logo" />
         </div>
       </div>
       <div className="mt-8">
@@ -27,7 +27,7 @@ export default function Home() {
 
           <button className="flex-1 flex flex-col items-center justify-center bg-[#2d2d2d] hover:bg-[#3a3a3a] rounded-xl p-4 transition duration-200">
             <div className="bg-[#f08a01] rounded-2xl px-6 py-4 mb-4">
-              <img src="images/icone-son.svg" alt="Icône Son" className="w-[30px] h-[30px]" />
+              <img src="public/images/icone-son.svg" alt="Icône Son" className="w-[30px] h-[30px]" />
             </div>
             <span className="text-sm font-semibold text-white text-center">Fichiers SON</span>
           </button>

@@ -12,8 +12,8 @@ export default function Login({ onLogin }) {
   }
 
   return (
-    <div className="bg-black flex items-center justify-center min-h-screen text-white">
-      <div className="bg-[#1a1a1a] rounded-2xl p-6 w-[90%] max-w-sm text-center shadow-xl">
+    <div className="bg-[#1a1a1a] flex items-center justify-center min-h-screen text-white pb-[env(safe-area-inset-bottom)] px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)">
+      <div className="bg-[#1a1a1a] rounded-2xl max-w-sm text-center shadow-xl">
         <div className="mb-6">
           <div className="flex justify-center">
             <img src="images/logo.png" alt="Simplytel Logo" />
