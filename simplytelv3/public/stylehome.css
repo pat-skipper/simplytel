@@ -1,0 +1,13 @@
+/* stylehome.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Pour garantir un comportement fluide sur iPhone */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
